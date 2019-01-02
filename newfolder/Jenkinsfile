@@ -1,7 +1,7 @@
 node('ussjo-dckr-ngp') {
 
   stage('python build'){
-    docker.image(''python:2-alpine'').inside {
+    docker.image('python:2-alpine').inside {
         echo 'hello'
         sh 'python --version'
     }
