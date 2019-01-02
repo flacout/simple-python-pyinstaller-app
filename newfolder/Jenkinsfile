@@ -2,7 +2,7 @@ node('ussjo-dckr-ngp') {
 
   stage('python build'){
     withDockerContainer('python:2-alpine') { 
-        sh 'python --version' 
+        echo "hello"
     } 
 
   }
