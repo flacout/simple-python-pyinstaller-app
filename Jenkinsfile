@@ -9,7 +9,7 @@ pipeline {
             }
             steps {
                 sh 'ls -la'
-                sh 'cd soucres'
+                sh 'cd sources'
                 sh 'ls -la'
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py'
                 sh 'pip install requests -t .'
